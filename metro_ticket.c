@@ -8,9 +8,10 @@ void main()
     ticket tick;
     int option;
     printf("\n------------------WELCOME TO METRO RESERVATION SYSTEM------------------\n");
-    printf("1. Book Ticket\n2. View Ticket\n3. View Map\n4. Exit\n");
-    printf("Enter your choice: \n");
+    printf("\n1. Book Ticket\n2. View Ticket\n3. View Map\n4. Exit\n");
+    printf("Enter your choice: ");
     scanf("%d", &option);
+    printf("\n");
     switch(option)
     {
         case 1:
