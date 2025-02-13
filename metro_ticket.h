@@ -9,7 +9,7 @@ typedef struct{
     int num_pass;
     float cost_per_tick;
     float total_cost;
-char validity[20];
+char validity[50];
 }ticket;
 
 

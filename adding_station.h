@@ -1,8 +1,8 @@
 #ifndef ADDING_STATION_H
 #define ADDING_STATION_H
 
-#define V_N 32
-#define G_N 37
+#define V_N 37
+#define G_N 31
 extern char **purple_line;
 extern char **green_line;
 extern int size;
