@@ -34,7 +34,7 @@ Metro Travel Assistant is a C-based Metro Reservation System designed for Bangal
 
 ## Installation
 1. Clone the repository:
-   git clone git@github.com:AmalaAndrews/Metro_assist.git
+   git clone https://github.com/AmalaAndrews/Metro_assist.git
 2. Navigate to the project directory:
    cd Metro_assist
 3. Compile the C program:
@@ -72,37 +72,3 @@ Metro Travel Assistant is a C-based Metro Reservation System designed for Bangal
 ## 5. Exiting the System
 
 - Displays a Thank You message before exiting.
-
-## Project Structure
-Metro_assist/
-│── metro_travel.c         # Main C program
-│── stations.h             # Header file for metro stations
-│── user_auth.c            # Handles user authentication
-│── ticket_booking.c       # Manages ticket booking
-│── ticket_viewing.c       # Displays booked tickets
-│── metro_map.c            # Displays metro stations
-│── data_storage.c         # Manages file storage operations
-│── README.md              # Project documentation
-│── tickets.txt            # Stores booked ticket details
-
-## Contributing
-Contributions are welcome! If you’d like to improve the project:
-
-1. Fork the repository.
-
-2. Create a new branch:
-
-   git checkout -b feature-name
-
-3. Commit your changes:
-
-   git commit -m "Add feature-name"
-
-4. Push the changes:
-
-  git push origin feature-name
-
-5. Open a Pull Request.
-
-## License
-This project is open-source and available under the MIT License.
