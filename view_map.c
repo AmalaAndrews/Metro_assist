@@ -5,9 +5,12 @@
 void view_map()
 {
     // initial(&opt);
-    printf("------------------------METRO MAP------------------------\n");
+    printf("\033[41;97m========================METRO MAP===========================\033[0m\n\n");
     fflush(stdout);
-    printf("%-30s%-20s%-30s\n\n", "PURPLE LINE", " ", "GREEN LINE");
+    printf("\033[45;97m   PURPLE LINE   \033[0m");
+	    // %-20s\033[42;97m%-30s\033[0m\n\n", "PURPLE LINE", " ", "GREEN LINE");
+    printf("                                 ");
+    printf("\033[102;97m   GREEN LINE   \033[0m\n\n");
 
     int max_size = (V_N > G_N) ? V_N : G_N;
     for(int i = 0; i < max_size; i++)
@@ -16,10 +19,10 @@ void view_map()
        {
           if (i == 14)
           {
-               printf("%-20s", purple_line[i]);
+               printf("\033[107;35m%-20s\033[0m", purple_line[i]);
           }
           else{
-               printf("%-30s", purple_line[i]);
+               printf("\033[107;35m%-30s\033[0m", purple_line[i]);
           }
         
        }
@@ -29,7 +32,9 @@ void view_map()
 
        if (i == 14)
        {
-         printf("<--- Intersection --->        ");
+	   printf("   ");
+         printf("\033[107;33m<--- Intersection --->\033[0m");
+	 printf("        ");
        }
        else if (i < max_size -1 || (1 == V_N - 1 && i == G_N - 1))
        {
@@ -40,7 +45,7 @@ void view_map()
        }
        if (i < G_N)
        {
-          printf("%s", green_line[i]);
+          printf("\033[107;32m%s\033[0m", green_line[i]);
        }
        printf("\n");
        if (i < max_size - 1)
